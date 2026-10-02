@@ -1,0 +1,98 @@
+# 🎮 Number Guessing Game (Level Selection Version)
+
+A console-based number guessing game written in Python. The player picks a starting level, guesses the hidden number using hints, and can earn bonus chances by winning a mini-game.
+
+This is a **practice project** built while learning Python. It uses only core Python concepts and the standard library.
+
+---
+
+## Features
+
+- Three difficulty levels: Easy, Medium and Hard
+- Choose your starting level (Easy, Medium or Hard)
+- Hint system that gets more detailed at higher levels
+- Review messages that tell you how close your guess was
+- Bonus chances through Rock Paper Scissors and Snake Water Gun
+- Super hints in bonus rounds (range hints and prime/composite hints)
+- Input validation and error handling
+- Replay option after losing
+- Star rating and feedback section at the end
+
+---
+
+## Levels
+
+| Level  | Number Range | Challenges | Hint                                    |
+|--------|--------------|------------|-----------------------------------------|
+| Easy   | 1 to 20      | 3          | Even or odd                             |
+| Medium | 1 to 50      | 3          | Even or odd                             |
+| Hard   | 1 to 100     | 3          | Even or odd + range                     |
+
+Each challenge uses a fresh random number. Winning any one of the 3 challenges wins the level.
+
+---
+
+## How the Game Flows
+
+**Starting at Easy**
+1. Win Easy and you move on to Medium.
+2. Lose Easy and you can choose to replay.
+
+**Starting at Medium**
+1. Win Medium and you move on to Hard.
+2. Lose Medium and you get a bonus chance.
+
+**Bonus chance for Medium:** win Rock Paper Scissors to unlock a Bonus Medium round with a range hint. Win it to continue to Hard.
+
+**Hard level:** win to get the Gold Medal. If you lose, play Snake Water Gun for a bonus chance, then win a Bonus Hard round with a super hint (prime or composite, even or odd, plus range) to get the Gold Medal.
+
+**Starting at Hard:** this is a single-level run. The game ends after the Hard level, whether you win or lose.
+
+At the end of the game you rate the game from 1 to 5 stars and leave short feedback (5 to 100 characters).
+
+---
+
+## Concepts Practiced
+
+- Variables, data types and operators
+- Conditional statements and loops
+- Functions and return values
+- Lists, dictionaries and strings
+- `random` module
+- Exception handling (`try` / `except`)
+- User input validation
+- Managing program flow across multiple levels
+
+---
+
+## How to Run
+
+Requirements: Python 3.x (no extra libraries needed).
+
+```bash
+python game_1.py
+```
+
+The game uses emojis and colored terminal text, so use a terminal that supports UTF-8.
+
+---
+
+## Project Structure
+
+```
+game_1.py   # complete game in a single file
+```
+
+Inside the file the code is split into functions for:
+
+- Hints (`hint_l1`, `hint_l2`, `hint_l3`, `superhint_l3`)
+- Reviews (`review_easy`, `review_medium`, `review_hard`)
+- Bonus mini-games (`bonus_chance1`, `bonus_chance2`)
+- Attempts, rating and feedback validation
+- The main game loop (`main_game`)
+
+---
+
+## Notes
+
+This is a learning project from my Python practice phase. The code is intentionally simple and function-based.

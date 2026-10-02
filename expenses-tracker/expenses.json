@@ -1,0 +1,33 @@
+{
+    "last_used_id": 4,
+    "expenses": [
+        {
+            "ID": 1,
+            "Date": "2026-06-24",
+            "Category": "FOOD",
+            "Amount": 30,
+            "Description": "Tea Time With Roommate"
+        },
+        {
+            "ID": 2,
+            "Date": "2026-06-28",
+            "Category": "food",
+            "Amount": 134,
+            "Description": "BOURNVILLE(chocolate)"
+        },
+        {
+            "ID": 3,
+            "Date": "2026-06-29",
+            "Category": "Biryani",
+            "Amount": 5200,
+            "Description": "Today my friend birthday so we are going out side and enjoy the party"
+        },
+        {
+            "ID": 4,
+            "Date": "2026-05-16",
+            "Category": "Entertainment",
+            "Amount": 5000,
+            "Description": "Enjoy your LIfe"
+        }
+    ]
+}
